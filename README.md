@@ -86,32 +86,41 @@
 
 ### 📌 Git Bash로 Jekyll 설치
 > - Jekyll은 Git Bash에서 설치 가능합니다.
-
-> - 작성자 Git Bash 입력 내용 :
+> - GIt Bash 실행 후 로컬 저장소로 이동한 뒤 Jekyll을 설치하면 됩니다.
+> - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
 >   ```bash
 >   $ cd /c/Users/ceoba/Dropbox/'2. PJT'/Kim-src.github.io
 >   $ gem install jekyll
 >   $ jekyll -v
 >   ```
-> - 작성자 Git Bash 출력 내용 :
+> - 입력 결과 작성자의 Git Bash 출력 내용은 아래와 같습니다.
 >   ```bash
 >   jekyll 4.3.3
 >   ```
+> - 그리고 Jekyll 설치가 완료된 로컬 저장소는 아래와 같은 상태로 변경됩니다.
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/e733d653-1afe-4345-80e4-13511d8d6b2d" width="500px"></p>
+
 ### 📌 Git Bash로 Bundler 설치
-> - 작성자 Git Bash 입력 내용 :
+> - Bundler 역시 Git Bash에서 설치 가능합니다.
+> - Git Bash가 실행된 상태에서 아래 내용을 입력하면 됩니다.
+> - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
 >   ```bash
 >   $ gem install bundler
 >   $ bundler -v
 >   ```
-> - 작성자 Git Bash 출력 내용 :
+> - 입력 결과 작성자의 Git Bash 출력 내용은 아래와 같습니다.
 >   ```bash
 >   Bundler version 2.5.6
 >   ```
+> - 그리고 Bundler 설치가 완료된 로컬 저장소는 다시 다음 상태로 변경됩니다.
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/670d434d-ee37-473b-9978-df490b2784dd" width="500px"></p>
 
 <br>
 
 ### 🔔 3. Results : 브라우저에 웹 페이지 호출
 ### 📌 새로운 Jekyll Project 생성
+> - 이제 첫 깃허브 블로그 웹 페이지를 생성할 모든 준비를 마쳤습니다.
+
 > - 작성자 Git Bash 입력 내용 :
 >   ```bash
 >   $ cd /c/Users/ceoba/Dropbox/'2. PJT'/Kim-src.github.io

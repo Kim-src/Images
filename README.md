@@ -97,8 +97,6 @@
 >   ```bash
 >   jekyll 4.3.3
 >   ```
-> - 그리고 Jekyll 설치가 완료된 로컬 저장소는 아래와 같은 상태로 변경됩니다.
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/e733d653-1afe-4345-80e4-13511d8d6b2d" width="500px"></p>
 
 ### 📌 Git Bash로 Bundler 설치
 > - Bundler 역시 Git Bash에서 설치 가능합니다.
@@ -112,66 +110,64 @@
 >   ```bash
 >   Bundler version 2.5.6
 >   ```
-> - 그리고 Bundler 설치가 완료된 로컬 저장소는 다시 다음 상태로 변경됩니다.
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/670d434d-ee37-473b-9978-df490b2784dd" width="500px"></p>
 
 <br>
 
 ### 🔔 3. Results : 브라우저에 웹 페이지 호출
 ### 📌 새로운 Jekyll Project 생성
-> - 이제 첫 깃허브 블로그 웹 페이지를 생성할 모든 준비를 마쳤습니다.
-
-> - 작성자 Git Bash 입력 내용 :
+> - 이제 첫 깃허브 블로그 웹 페이지를 생성할 모든 준비가 완료되었습니다.
+> - Git Bash에서 로컬 저장소로 접근 후 Jekyll 프로젝트를 생성하겠습니다.
+> - 참고로 user-name/github.io 폴더 내에 파일이 이미 있으면 설치가 진행되지 않습니다.
+> - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
 >   ```bash
 >   $ cd /c/Users/ceoba/Dropbox/'2. PJT'/Kim-src.github.io
 >   $ jekyll new ./
 >   ```
-> - 작성자 Git Bash 출력 내용 :
->   ```bash
->   - Jekyll 설치 관련 사항
->   ```
-> - 아래 이미지는 Jekyll이 설치된 직후의 로컬 저장소 main 폴더 상태
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/af3faae6-5a78-4ae7-94b3-3bafc35a1fed" width="500px"></p>
+> - 위 내용을 입력하면 Git Bash에 Jekyll 설치 관련 사항이 출력됩니다.
+> - 그리고 로컬 저장소명 우측에 '(main)'이라는 문구가 도시됩니다.
+> - 또한 로컬 저장소의 main 폴더는 아래와 같은 상태로 변경됩니다.
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/e733d653-1afe-4345-80e4-13511d8d6b2d" width="500px"></p>
 
 ### 📌 새로운 Bundle Tool 생성
-> - 작성자 Git Bash 입력 내용 :
+> - 다음으로 Bundle Tool에 대한 설치가 필요합니다.
+> - 참고로 상기 ```$ gem install bundler```는 이 Bundle 설치를 위한 초석입니다.
+> - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
 >   ```bash
 >   $ bundle install
 >   $ bundle update
 >   $ bundle install
 >   ```
-> - 작성자 Git Bash 출력 내용 :
->   ```bash
->   - bundle 설치 및 업데이트 관련 사항
->   ```
-> - 아래 이미지는 Bundle이 설치된 직후의 로컬 저장소 main 폴더 상태
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/9e32a194-ab2b-4a6e-ab5f-7949dcb8f18c" width="500px"></p>
+> - 위 내용을 입력하면 Git Bash에 Bundle tool 설치 관련 사항이 출력됩니다.
+> - 그리고 로컬 저장소의 main 폴더는 아래와 같은 상태로 다시 변경됩니다.
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/670d434d-ee37-473b-9978-df490b2784dd" width="500px"></p>
 
-### 📌 Jekyll 기본 웹 페이지 생성
-> - Local Server Address (URL) 생성
-> - 작성자 Git Bash 입력 내용 :
+### 📌 Jekyll의 기본 웹 페이지 호출
+> - 드디어 기본 웹 페이지 호출 단계이며 로컬 서버 주소(URL)를 생성하겠습니다.
+> - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
 >   ```bash
 >   $ bundle exec jekyll serve
 >   ```
-> - 작성자 Git Bash 출력 내용 :
->   ```bash
->   - Jekyll의 로컬 웹 서버 실행 사항
->   - 개발중인 웹 관련 서버(URL) 주소 출력
+> - 위 내용을 입력하면 Git Bash에 다양한 정보들과 함께 서버 주소가 출력됩니다.
+> - 서버 주소는 아래와 같은 형식으로 출력되었을 것입니다.
+>   ``` bash
+>   Server address: http://127.0.0.1:4000/
 >   ```
-> - 웹 페이지 호출 방법
->   ```bash
->   - 브라우저(Chrome 등) 주소창에 아래 주소 입력
->   - 아래 주소는 Git Bash에 일반적으로 출력되는 내용
->   - http://127.0.0.1:4000/
->   ```
+> - 50행 이상의 출력 내용 중에서 위 주소를 찾은 뒤 웹 브라우저에 주소를 입력하면 됩니다.
+> - 만일 발견하지 못하셨더라도 일반적인 주소는 위 주소와 동일하니 Ctrl + C/V 하시면 됩니다.
+> - 참고로 웹 브라우저란 Chrome, Microsoft Edge 등을 의미합니다.
+
 ### 📌 성공적으로 호출된 웹 페이지
-> - 아래 이미지와 같은 Jekyll 기본 페이지가 호출되면 성공
+> - 아래 이미지는 성공적으로 호출된 Jekyll의 기본 웹 페이지입니다.
 <p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/33d309a9-8c3c-4b76-9728-a33b6b939968" width="500px"></p>
 
 <br>
 
-### 🔔 4. Conclusions : ~
-### 📌 ~
+### 🔔 4. Conclusions : 추후 단계
+### 📌 정식 깃허브 블로그 개설 및 테마 적용
+> - Jekyll의 기본 웹 페이지 호출하기까지 고생 많으셨습니다.
+> - 다음 글에서는 블로그를 운영할 수 있는 수준까지 말씀드리겠습니다.
+> - 아래는 다음 글 링크입니다.
+> - [나만의 깃허브 블로그 꾸미기]()
 
 <br>
 
@@ -186,8 +182,4 @@
 <br>
 <br>
 <br>
-
-
-
-
 
